@@ -409,11 +409,11 @@ time {
   flex-wrap: wrap;
   padding-inline: 20px
 }
-.pagination__item {
+.pagination__link {
   transition: color .3s;
   position: relative
 }
-.pagination__item::after {
+.pagination__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -423,10 +423,16 @@ time {
   background-color: #5d71dd;
   transition: width .3s
 }
-.pagination__item:hover {
+.pagination__link:hover {
   color: #5d71dd
 }
-.pagination__item:hover::after {
+.pagination__link:hover::after {
+  width: 100%
+}
+.pagination__link_active {
+  color: #5d71dd
+}
+.pagination__link_active::after {
   width: 100%
 }
 .pagination__button {
